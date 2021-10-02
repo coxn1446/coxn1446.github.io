@@ -3,46 +3,63 @@ body {
     padding: 0px;
 }
 
-header h1 {
-    background-color: black;
-    color: white;
-    z-index: 1;
+nav {
+    white-space: nowrap;
+    width: 100%;
+    background-color:black;
+    height: 66px;
+    top: 0px;
+}
+
+
+nav a {
     text-decoration: none;
-    margin: 0;
-    padding: 0px;
-    position: fixed;
-    height: 50px;
-    line-height: 50px;
-    left: 14px;
+    color:white;
+    font-size:larger;
+    padding: 8px;
+    height: inherit;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+nav a:visited {
+    color:white
+}
+
+nav a:hover {
+    background-color: gray;
 }
 
 nav ul {
     list-style-type: none;
+    z-index: 100;
     margin: 0;
     padding: 0px;
-    border: solid black 1px;
-    overflow: hidden;
+    top: 0px;
     background-color: black;
-    position: fixed;
-    width: 100%;
-    display: inline;
-    height: 50px;
-    vertical-align: middle;
-
+    position: sticky;
+    text-align: center;
+    width:100%;
+    display:inline-table;
+    height:inherit;
 }
 
 nav ul li {
     float: right;
+    height:inherit;
+    vertical-align: middle;
+    display:table;
+    
 }
 
-nav ul li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+.homeNavigation {
+    float: left;
 }
 
-nav ul li a:hover {
-    background-color: gray;
+.homepageHeroImage {
+    position:absolute;
+    top: 82px;
+    height: 600px;
+    width: 100%;
+    background-image:url(forest.jpeg)
 }
