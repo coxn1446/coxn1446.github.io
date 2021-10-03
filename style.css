@@ -49,6 +49,7 @@ nav ul li {
     height:inherit;
     vertical-align: middle;
     display:table;
+    width: 107px
     
 }
 
@@ -57,9 +58,26 @@ nav ul li {
 }
 
 .homepageHeroImage {
-    position:absolute;
-    top: 82px;
+    position:relative;
+    top: 0px;
     height: 600px;
     width: 100%;
     background-image:url(https://raw.githubusercontent.com/coxn1446/coxn1446.github.io/main/forest.jpeg)
+}
+
+.homepageQuote {
+    z-index: 2;
+    background-color: white;
+    opacity: 80%;
+    text-align: center;
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    bottom: 15%;
+    padding:0px
+}
+
+.homepageQuoteText {
+    padding: 8px;
+    margin: 0px;
 }
