@@ -3,7 +3,7 @@
     <head>
         <title>Mixed Messages</title>
         <link rel="stylesheet" href="../CSS/style.css">
-        <script type="text/javascript" src=></script>
+        <script type="text/javascript" src="../JS/Mixed-Messages.js" defer></script>
     </head>
     <body>
         <header>
@@ -17,21 +17,22 @@
             </nav>
         </header>
         <h1>Mixed Messages</h1>
-        <p>Please use the inputs belows to create your own Mad Lib. All three fields are required to product an output.
+        <p>Please use the inputs belows to create your own Mad Lib. All three fields are required to produce an output.
             All three fields must be strings of letters, no numbers or special characters.
         </p>
-        <form method="GET">
-            <label for="word-1">First Word</label>
+        <form>
+            <label for="word-1">Noun</label>
             <input id="word-1" type="text" name="word-1" required>
             <br>
-            <label for="word-2">Second Word</label>
+            <label for="word-2">Adjective</label>
             <input id="word-2" type="text" name="word-2" required>
             <br>
-            <label for="word-3">Third Word</label>
+            <label for="word-3">Verb (present tense)</label>
             <input id="word-3" type="text" name="word-3" required>
             <br>
-            <input type="submit" value="Generate a Mad Lib">
+            <input type="submit" id="submit" value="Generate a Mad Lib">
         </form>
+        <p id="mad-lib"></p>
     </body>
     <footer>
 
