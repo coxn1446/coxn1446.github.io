@@ -108,3 +108,7 @@ button {
     background-color:black;
     color: white;
 }
+
+button :visited {
+    color: white;
+}
