@@ -81,3 +81,30 @@ nav ul li {
     padding: 8px;
     margin: 0px;
 }
+
+.madLib {
+    width: 50%;
+    padding: 8px;
+    background-color: rosybrown;
+    position:relative;
+    text-align: center;
+    margin: auto;
+    top: 50px;
+    border-radius: 5%;
+
+}
+
+input {
+    width: 90%;
+    margin: 0px 0px 8px;
+}
+
+input[type=submit] {
+    background-color:black;
+    color: white;
+}
+
+button {
+    background-color:black;
+    color: white;
+}

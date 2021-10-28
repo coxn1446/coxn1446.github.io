@@ -16,12 +16,12 @@
                   </ul>
             </nav>
         </header>
+        <div class="madLib">
         <h1>Mixed Messages</h1>
         <p>Please use the inputs belows to create your own Mad Lib. All three fields are required to produce an output.
-            All three fields must be strings of letters, no numbers or special characters.
         </p>
-        <form>
-            <label for="word-1">Noun</label>
+        <form action="MixedMessagesMadLib.html" method="get"> 
+            <label for="word-1">Noun (singular)</label>
             <input id="word-1" type="text" name="word-1" required>
             <br>
             <label for="word-2">Adjective</label>
@@ -32,7 +32,7 @@
             <br>
             <input type="submit" id="submit" value="Generate a Mad Lib">
         </form>
-        <p id="mad-lib"></p>
+        </div>
     </body>
     <footer>
 
