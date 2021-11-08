@@ -37,10 +37,7 @@ nav ul {
     padding: 0px;
     top: 0px;
     background-color: black;
-    position: sticky;
-    text-align: center;
-    width:100%;
-    display:inline-table;
+     
     height:inherit;
 }
 
