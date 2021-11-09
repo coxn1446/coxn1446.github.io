@@ -1,5 +1,5 @@
 * {
-    /* border: 1px solid red; */
+    border: 1px solid red;
     margin: 0px;
     padding: 0px;
 
@@ -12,13 +12,12 @@
 .containerGrid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(15,100px);
+    grid-template-rows: repeat(13,100px);
     grid-template-areas: none;
     grid-gap: 10px;
-
 }
 
-.itemA {
+.itemAContainer {
     grid-column: 1 / span 12;
     grid-row: 1 / span 1;
     background-color: brown;
@@ -31,6 +30,11 @@
 .itemAA {
     grid-column: 1 / span 12;
     grid-row: 2 / span 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: underline;
 }
 .itemABContainer {
     grid-column: 9 / span 4;
@@ -58,122 +62,136 @@
     grid-column: 10 / span 3;
 }
 
+.itemABA:hover,.itemABB:hover,.itemABC:hover,.itemABD:hover {
+    background-color: gray;
+}
+
 .itemABA, .itemABB, .itemABC, .itemABD {
-    margin: auto;
-    font-size: 24px;
-    text-align:center;
+    font-size: 22px;
     grid-row: 1 / span 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-.itemB {
+.itemBContainer, .itemCContainer, .itemDContainer, .itemEContainer {
+    display:grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(12,1fr);
+    grid-template-areas: none;
+    grid-row: 2 / span 2;
+    background-size: cover;
+    border: 2px solid black;
+}
+
+.itemBContainer {
     grid-column: 1 / span 3;
-    grid-row: 2 / span 2;
-    background-color:forestgreen;
+    background-image: url(../Assets/AOvechkin8.jpeg);
 }
 
-.itemC {
+.itemCContainer {
     grid-column: 4 / span 3;
-    grid-row: 2 / span 2;
-    background-color:forestgreen;
+    background-image: url(../Assets/MStLouis26.jpeg)
 }
 
-.itemD {
+.itemDContainer {
     grid-column: 7 / span 3;
-    grid-row: 2 / span 2;
-    background-color:forestgreen
+    background-image: url(../Assets/PKane88.jpeg)
 }
 
-.itemE {
+.itemEContainer {
     grid-column: 10 / span 3;
-    grid-row: 2 / span 2;
-    background-color:forestgreen;
+    background-image: url(../Assets/TThomas30.jpeg)
+}
+
+.itemBA, .itemCA, .itemDA, .itemEA {
+    grid-column: 2 / span 6;
+    grid-row: 11 / span 1;
+    background-color: white;
+    text-align: center;
+    border: 2px solid black;
 }
 
 .itemF {
     grid-column: 1 / span 12;
-    grid-row: 4 / span 6;
+    grid-row: 4 / span 5;
     background-color: goldenrod
+}
+
+.itemGContainer, .itemHContainer, .itemIContainer {
+    grid-row: 9 / span 2;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(10,1fr);
+    grid-template-areas: none;
+    grid-gap: 10px;
 }
 
 .itemGContainer {
     grid-column: 1 / span 4;
-    grid-row: 10 / span 2;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(10,1fr);
-    grid-template-areas: none;
-    grid-gap: 10px;
-
-}
-
-.itemGA {
-    grid-column: 1 / span 12;
-    grid-row: 1 / span 2;
-    background-color:darkblue
-}
-
-.itemGB {
-    grid-column: 1 / span 12;
-    grid-row: 3 / span 8;
-    background-color:darkblue
 }
 
 .itemHContainer {
     grid-column: 5 / span 4;
-    grid-row: 10 / span 2;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(10,1fr);
-    grid-template-areas: none;
-    grid-gap: 10px;
-
-}
-
-.itemHA {
-    grid-column: 1 / span 12;
-    grid-row: 1 / span 2;
-    background-color:darkblue
-}
-
-.itemHB {
-    grid-column: 1 / span 12;
-    grid-row: 3 / span 8;
-    background-color:darkblue
 }
 
 .itemIContainer {
     grid-column: 9 / span 4;
-    grid-row: 10 / span 2;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(10,1fr);
-    grid-template-areas: none;
-    grid-gap: 10px;
-
 }
 
-.itemIA {
+.itemGA, .itemHA, .itemIA {
     grid-column: 1 / span 12;
     grid-row: 1 / span 2;
     background-color:darkblue
 }
 
-.itemIB {
+.itemGBContainer, .itemHBContainer, .itemIBContainer {
     grid-column: 1 / span 12;
     grid-row: 3 / span 8;
-    background-color:darkblue
+    background-color:darkblue;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12,1fr);
+    grid-template-areas: none;
+    grid-gap: 10px;
+}
+
+.itemGBA, .itemHBA, .itemIBA {
+    grid-column: 1 / span 6;
+    grid-row: 1 / span 8;
+    background-size: cover;
+    float: left;
+}
+
+.itemGBA {
+    background-image: url(../Assets/wildfire.jpg)
+}
+
+.itemHBA {
+    background-image: url(../Assets/northern\ lights.jpeg)
+}
+
+.itemIBA {
+    background-image: url(../Assets/riot\ police.jpeg)
+}
+
+.itemGBB {
+    grid-column: 1 / span 12;
+    grid-row: 1 / span 12;
+    
 }
 
 .itemJContainer {
     grid-column: 1 / span 12;
-    grid-row: 12 / span 4;
+    grid-row: 11 / span 3;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(10,1fr);
     grid-template-areas: none;
     grid-gap: 10px;
     background-color: darkseagreen;
-
 }
 
 .itemJA {
