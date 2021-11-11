@@ -1,5 +1,5 @@
 * {
-    /* border: 1px solid red; */
+    /*border: 1px solid red;*/
     margin: 0px;
     padding: 0px;
 
@@ -213,14 +213,41 @@
     background-color: darkseagreen;
 }
 
-.itemJA {
-    grid-column: 2 / span 10;
+.itemJA, .itemJB {
+    grid-column: 4 / span 6;
     grid-row: 3 / span 5;
+    text-align:center;
+}
+
+.itemJA {
+    display:block;
+}
+
+textarea {
+    width:100%;
+    resize:none;
+}
+
+textarea:focus {
+    border: 3px solid black;
+}
+
+input[type="submit"] {
+    width: 25%;
+    margin: auto;
+    
 }
 
 .itemJB {
+    display:none;
+    font-size:24px;
+}
+
+.itemJC {
     grid-column: 4 / span 6;
     grid-row: 10 / span 2;
+    text-align: center;
+    font-size:9px;
 }
 
 }

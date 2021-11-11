@@ -55,8 +55,17 @@
                 </div>
             </div>
             <div class="itemJContainer">
-                <div class="itemJA"></div>
-                <div class="itemJB"></div>
+                <div class="itemJA" id="itemJA">
+                    <p>Tell me what you think of the website!</p>
+                    <form action="#itemJA" onsubmit="changeDisplay(); return false">
+                        <textarea id="message" required rows="10" cols="50"></textarea>
+                        <input type="submit" value="Submit" id="submitButton">
+                    </form>
+                </div>
+                <div class="itemJB" id="itemJB">I don't care what you think</div>
+                <div class="itemJC">
+                    <p>All images were obtained under creative commons license. This page was made for no reason besides fun.</p>
+                </div>
             </div>
 
         </div>
