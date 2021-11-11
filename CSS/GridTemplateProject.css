@@ -5,8 +5,503 @@
 
 }
 
-@media only screen and (min-width:320px) and (max-width:599px){ /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
-@media only screen and (min-width:600px) and (max-width: 1025px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+@media only screen and (min-width:320px) and (max-width:599px){ /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+    .containerGrid {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(20,50px);
+        grid-template-areas: none;
+        grid-gap: 10px;
+        padding: 0px 10px;
+    }
+    
+    .itemAContainer {
+        grid-column: 1 / span 12;
+        grid-row: 1 / span 2;
+        display:grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas: none;
+        grid-gap: 10px;
+        border: 2px solid black;
+    }
+    .itemAA {
+        grid-column: 1 / span 12;
+        grid-row: 1 / span 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        text-decoration: underline;
+    }
+    .itemABContainer {
+        grid-column: 3 / span 8;
+        grid-row: 2 / span 1;
+        display:grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(1,1fr);
+        grid-template-areas: none;
+        grid-gap: 10px;
+    }
+    
+    .itemABA {
+        grid-column: 1 / span 3;
+    }
+    
+    .itemABB {
+        grid-column: 4 / span 3;
+    }
+    
+    .itemABC {
+        grid-column: 7 / span 3;
+    }
+    
+    .itemABD {
+        grid-column: 10 / span 3;
+    }
+    
+    .itemABA:hover,.itemABB:hover,.itemABC:hover,.itemABD:hover {
+        background-color: gray;
+    }
+    
+    .itemABA, .itemABB, .itemABC, .itemABD {
+        font-size: 22px;
+        grid-row: 1 / span 1;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .itemBContainer, .itemCContainer, .itemDContainer, .itemEContainer {
+        display:grid;
+        grid-template-columns: repeat(8,1fr);
+        grid-template-rows: repeat(12,1fr);
+        grid-template-areas: none;
+        background-size: cover;
+        border: 2px solid black;
+    }
+    
+    .itemBContainer {
+        grid-row: 3 / span 2;
+        grid-column: 1 / span 6;
+        background-image: url(../Assets/AOvechkin8.jpeg);
+    }
+    
+    .itemCContainer {
+        grid-row: 3 / span 2;
+        grid-column: 7 / span 6;
+        background-image: url(../Assets/MStLouis26.jpeg)
+    }
+    
+    .itemDContainer {
+        grid-row: 5 / span 2;
+        grid-column: 1 / span 6;
+        background-image: url(../Assets/PKane88.jpeg)
+    }
+    
+    .itemEContainer {
+        grid-row: 5 / span 2;
+        grid-column: 7 / span 6;
+        background-image: url(../Assets/TThomas30.jpeg)
+    }
+    
+    .itemBA, .itemCA, .itemDA, .itemEA {
+        grid-column: 2 / span 6;
+        grid-row: 11 / span 1;
+        background-color: white;
+        text-align: center;
+        border: 2px solid black;
+    }
+    
+    .itemFContainer {
+        grid-column: 1 / span 12;
+        grid-row: 7 / span 5;
+        background-color: rosybrown;
+        display: grid;
+        grid-template-columns: repeat(8,1fr);
+        grid-template-rows: repeat(12,1fr);
+        grid-template-areas: none;
+    }
+    
+    .itemFA {
+        grid-column: 4 / span 2;
+        grid-row: 11 / span 1;
+    }
+    
+    .changeColorButton {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+    }
+    
+    .itemGContainer, .itemHContainer, .itemIContainer {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(10,1fr);
+        grid-template-areas: none;
+        grid-gap: 10px;
+        border: 2px solid black;
+        background-color: lightgray;
+        padding: 5px;
+    }
+    
+    .itemGContainer {
+        grid-row: 12 / span 3;
+        grid-column: 1 / span 6;
+    }
+    
+    .itemHContainer {
+        grid-row: 12 / span 3;
+        grid-column: 7 / span 6;
+    }
+    
+    .itemIContainer {
+        grid-row: 15 / span 3;
+        grid-column: 1 / span 6;
+    }
+    
+    .itemGA, .itemHA, .itemIA {
+        grid-column: 1 / span 12;
+        grid-row: 1 / span 2;
+        text-align: center;
+        font-size: 18px;
+        text-decoration: solid;
+    }
+    
+    .itemGBContainer, .itemHBContainer, .itemIBContainer {
+        grid-column: 1 / span 12;
+        grid-row: 3 / span 8;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12,1fr);
+        grid-template-areas: none;
+        grid-gap: 10px;
+    }
+    
+    .itemGBA, .itemHBA, .itemIBA {
+        grid-column: 1 / span 6;
+        grid-row: 2 / span 8;
+        background-size: cover;
+    }
+    
+    .itemGBA {
+        background-image: url(../Assets/wildfire.jpg);
+    }
+    
+    .itemHBA {
+        background-image: url(../Assets/northern\ lights.jpeg)
+    }
+    
+    .itemIBA {
+        background-image: url(../Assets/riot\ police.jpeg)
+    }
+    
+    .itemGBB, .itemHBB, .itemIBB {
+        grid-column: 7 / span 6;
+        grid-row: 2 / span 11;
+        overflow: hidden;
+    }
+    
+    .itemJContainer {
+        grid-column: 1 / span 12;
+        grid-row: 18 / span 3;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(10,1fr);
+        grid-template-areas: none;
+        grid-gap: 10px;
+        background-color: darkseagreen;
+    }
+    
+    .itemJA, .itemJB {
+        grid-column: 4 / span 6;
+        grid-row: 2 / span 5;
+        text-align:center;
+    }
+    
+    .itemJA {
+        display:block;
+    }
+    
+    textarea {
+        width:100%;
+        resize:none;
+    }
+    
+    textarea:focus {
+        border: 3px solid black;
+    }
+    
+    input[type="submit"] {
+        width: 25%;
+        margin: auto;
+        
+    }
+    
+    .itemJB {
+        display:none;
+        font-size:24px;
+    }
+    
+    .itemJC {
+        grid-column: 4 / span 6;
+        grid-row: 10 / span 2;
+        text-align: center;
+        font-size:9px;
+    }
+
+}
+@media only screen and (min-width:600px) and (max-width: 1025px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+
+    .containerGrid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(20,85px);
+        grid-template-areas: none;
+        grid-gap: 10px;
+        padding: 0px 10px;
+    }
+    
+    .itemAContainer {
+        grid-column: 1 / span 12;
+        grid-row: 1 / span 2;
+        display:grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas: none;
+        grid-gap: 10px;
+        border: 2px solid black;
+    }
+    .itemAA {
+        grid-column: 1 / span 12;
+        grid-row: 1 / span 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        text-decoration: underline;
+    }
+    .itemABContainer {
+        grid-column: 3 / span 8;
+        grid-row: 2 / span 1;
+        display:grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(1,1fr);
+        grid-template-areas: none;
+        grid-gap: 10px;
+    }
+    
+    .itemABA {
+        grid-column: 1 / span 3;
+    }
+    
+    .itemABB {
+        grid-column: 4 / span 3;
+    }
+    
+    .itemABC {
+        grid-column: 7 / span 3;
+    }
+    
+    .itemABD {
+        grid-column: 10 / span 3;
+    }
+    
+    .itemABA:hover,.itemABB:hover,.itemABC:hover,.itemABD:hover {
+        background-color: gray;
+    }
+    
+    .itemABA, .itemABB, .itemABC, .itemABD {
+        font-size: 22px;
+        grid-row: 1 / span 1;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .itemBContainer, .itemCContainer, .itemDContainer, .itemEContainer {
+        display:grid;
+        grid-template-columns: repeat(8,1fr);
+        grid-template-rows: repeat(12,1fr);
+        grid-template-areas: none;
+        background-size: cover;
+        border: 2px solid black;
+    }
+    
+    .itemBContainer {
+        grid-row: 3 / span 2;
+        grid-column: 1 / span 6;
+        background-image: url(../Assets/AOvechkin8.jpeg);
+    }
+    
+    .itemCContainer {
+        grid-row: 3 / span 2;
+        grid-column: 7 / span 6;
+        background-image: url(../Assets/MStLouis26.jpeg)
+    }
+    
+    .itemDContainer {
+        grid-row: 5 / span 2;
+        grid-column: 1 / span 6;
+        background-image: url(../Assets/PKane88.jpeg)
+    }
+    
+    .itemEContainer {
+        grid-row: 5 / span 2;
+        grid-column: 7 / span 6;
+        background-image: url(../Assets/TThomas30.jpeg)
+    }
+    
+    .itemBA, .itemCA, .itemDA, .itemEA {
+        grid-column: 2 / span 6;
+        grid-row: 11 / span 1;
+        background-color: white;
+        text-align: center;
+        border: 2px solid black;
+    }
+    
+    .itemFContainer {
+        grid-column: 1 / span 12;
+        grid-row: 7 / span 5;
+        background-color: rosybrown;
+        display: grid;
+        grid-template-columns: repeat(8,1fr);
+        grid-template-rows: repeat(12,1fr);
+        grid-template-areas: none;
+    }
+    
+    .itemFA {
+        grid-column: 4 / span 2;
+        grid-row: 11 / span 1;
+    }
+    
+    .changeColorButton {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+    }
+    
+    .itemGContainer, .itemHContainer, .itemIContainer {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(10,1fr);
+        grid-template-areas: none;
+        grid-gap: 10px;
+        border: 2px solid black;
+        background-color: lightgray;
+        padding: 5px;
+    }
+    
+    .itemGContainer {
+        grid-row: 12 / span 3;
+        grid-column: 1 / span 6;
+    }
+    
+    .itemHContainer {
+        grid-row: 12 / span 3;
+        grid-column: 7 / span 6;
+    }
+    
+    .itemIContainer {
+        grid-row: 15 / span 3;
+        grid-column: 1 / span 6;
+    }
+    
+    .itemGA, .itemHA, .itemIA {
+        grid-column: 1 / span 12;
+        grid-row: 1 / span 2;
+        text-align: center;
+        font-size: 18px;
+        text-decoration: solid;
+    }
+    
+    .itemGBContainer, .itemHBContainer, .itemIBContainer {
+        grid-column: 1 / span 12;
+        grid-row: 3 / span 8;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12,1fr);
+        grid-template-areas: none;
+        grid-gap: 10px;
+    }
+    
+    .itemGBA, .itemHBA, .itemIBA {
+        grid-column: 1 / span 6;
+        grid-row: 2 / span 8;
+        background-size: cover;
+    }
+    
+    .itemGBA {
+        background-image: url(../Assets/wildfire.jpg);
+    }
+    
+    .itemHBA {
+        background-image: url(../Assets/northern\ lights.jpeg)
+    }
+    
+    .itemIBA {
+        background-image: url(../Assets/riot\ police.jpeg)
+    }
+    
+    .itemGBB, .itemHBB, .itemIBB {
+        grid-column: 7 / span 6;
+        grid-row: 2 / span 11;
+        overflow: hidden;
+    }
+    
+    .itemJContainer {
+        grid-column: 1 / span 12;
+        grid-row: 18 / span 3;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(10,1fr);
+        grid-template-areas: none;
+        grid-gap: 10px;
+        background-color: darkseagreen;
+    }
+    
+    .itemJA, .itemJB {
+        grid-column: 4 / span 6;
+        grid-row: 2 / span 5;
+        text-align:center;
+    }
+    
+    .itemJA {
+        display:block;
+    }
+    
+    textarea {
+        width:100%;
+        resize:none;
+    }
+    
+    textarea:focus {
+        border: 3px solid black;
+    }
+    
+    input[type="submit"] {
+        width: 25%;
+        margin: auto;
+        
+    }
+    
+    .itemJB {
+        display:none;
+        font-size:24px;
+    }
+    
+    .itemJC {
+        grid-column: 4 / span 6;
+        grid-row: 10 / span 2;
+        text-align: center;
+        font-size:9px;
+    }
+
+}
 @media only screen and (min-width:1026px) { /* hi-res laptops and desktops */ 
 
 .containerGrid {
