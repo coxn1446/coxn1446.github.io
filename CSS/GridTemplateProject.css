@@ -1,5 +1,5 @@
 * {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: 0px;
     padding: 0px;
 
@@ -15,17 +15,18 @@
     grid-template-rows: repeat(13,100px);
     grid-template-areas: none;
     grid-gap: 10px;
+    padding: 0px 10px;
 }
 
 .itemAContainer {
     grid-column: 1 / span 12;
     grid-row: 1 / span 1;
-    background-color: brown;
     display:grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(6,1fr);
     grid-template-areas: none;
     grid-gap: 10px;
+    border: 2px solid black;
 }
 .itemAA {
     grid-column: 1 / span 12;
@@ -38,7 +39,7 @@
 }
 .itemABContainer {
     grid-column: 9 / span 4;
-    grid-row: 2 / span 4;
+    grid-row: 1 / span 6;
     display:grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(1,1fr);
@@ -114,10 +115,25 @@
     border: 2px solid black;
 }
 
-.itemF {
+.itemFContainer {
     grid-column: 1 / span 12;
     grid-row: 4 / span 5;
-    background-color: goldenrod
+    background-color: rosybrown;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(12,1fr);
+    grid-template-areas: none;
+}
+
+.itemFA {
+    grid-column: 4 / span 2;
+    grid-row: 11 / span 1;
+}
+
+.changeColorButton {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
 }
 
 .itemGContainer, .itemHContainer, .itemIContainer {
@@ -127,6 +143,9 @@
     grid-template-rows: repeat(10,1fr);
     grid-template-areas: none;
     grid-gap: 10px;
+    border: 2px solid black;
+    background-color: lightgray;
+    padding: 5px;
 }
 
 .itemGContainer {
@@ -144,13 +163,14 @@
 .itemGA, .itemHA, .itemIA {
     grid-column: 1 / span 12;
     grid-row: 1 / span 2;
-    background-color:darkblue
+    text-align: center;
+    font-size: 18px;
+    text-decoration: solid;
 }
 
 .itemGBContainer, .itemHBContainer, .itemIBContainer {
     grid-column: 1 / span 12;
     grid-row: 3 / span 8;
-    background-color:darkblue;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12,1fr);
@@ -160,13 +180,12 @@
 
 .itemGBA, .itemHBA, .itemIBA {
     grid-column: 1 / span 6;
-    grid-row: 1 / span 8;
+    grid-row: 2 / span 8;
     background-size: cover;
-    float: left;
 }
 
 .itemGBA {
-    background-image: url(../Assets/wildfire.jpg)
+    background-image: url(../Assets/wildfire.jpg);
 }
 
 .itemHBA {
@@ -177,10 +196,10 @@
     background-image: url(../Assets/riot\ police.jpeg)
 }
 
-.itemGBB {
-    grid-column: 1 / span 12;
-    grid-row: 1 / span 12;
-    
+.itemGBB, .itemHBB, .itemIBB {
+    grid-column: 7 / span 6;
+    grid-row: 2 / span 11;
+    overflow:hidden;
 }
 
 .itemJContainer {
