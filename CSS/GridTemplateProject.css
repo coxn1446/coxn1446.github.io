@@ -5,45 +5,61 @@
 
 }
 
-@media only screen and (min-width:320px) and (max-width:599px){ /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+@media only screen and (min-width:10px) and (max-width:599px){ /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+    
     .containerGrid {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(20,50px);
+        grid-template-rows: repeat(32, 75px);
         grid-template-areas: none;
         grid-gap: 10px;
         padding: 0px 10px;
     }
     
     .itemAContainer {
-        grid-column: 1 / span 12;
+        grid-column: 1 / span 6;
         grid-row: 1 / span 2;
         display:grid;
         grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
         grid-template-areas: none;
         grid-gap: 10px;
         border: 2px solid black;
     }
     .itemAA {
         grid-column: 1 / span 12;
-        grid-row: 1 / span 1;
+        grid-row: 1 / span 2;
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
         text-decoration: underline;
+        font-size: 24px;
     }
     .itemABContainer {
         grid-column: 3 / span 8;
         grid-row: 2 / span 1;
-        display:grid;
+        display: none;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(1,1fr);
         grid-template-areas: none;
         grid-gap: 10px;
     }
     
+    .itemABA:hover,.itemABB:hover,.itemABC:hover,.itemABD:hover {
+        background-color: gray;
+    }
+    
+    .itemABA, .itemABB, .itemABC, .itemABD {
+        font-size: 22px;
+        grid-row: 1 / span 1;
+        height: 100%;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
     .itemABA {
         grid-column: 1 / span 3;
     }
@@ -60,20 +76,6 @@
         grid-column: 10 / span 3;
     }
     
-    .itemABA:hover,.itemABB:hover,.itemABC:hover,.itemABD:hover {
-        background-color: gray;
-    }
-    
-    .itemABA, .itemABB, .itemABC, .itemABD {
-        font-size: 22px;
-        grid-row: 1 / span 1;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    
     .itemBContainer, .itemCContainer, .itemDContainer, .itemEContainer {
         display:grid;
         grid-template-columns: repeat(8,1fr);
@@ -81,29 +83,26 @@
         grid-template-areas: none;
         background-size: cover;
         border: 2px solid black;
+        grid-column: 2 / span 4;
     }
     
     .itemBContainer {
-        grid-row: 3 / span 2;
-        grid-column: 1 / span 6;
+        grid-row: 3 / span 3;
         background-image: url(../Assets/AOvechkin8.jpeg);
     }
     
     .itemCContainer {
-        grid-row: 3 / span 2;
-        grid-column: 7 / span 6;
+        grid-row: 6 / span 3;
         background-image: url(../Assets/MStLouis26.jpeg)
     }
     
     .itemDContainer {
-        grid-row: 5 / span 2;
-        grid-column: 1 / span 6;
+        grid-row: 9 / span 3;
         background-image: url(../Assets/PKane88.jpeg)
     }
     
     .itemEContainer {
-        grid-row: 5 / span 2;
-        grid-column: 7 / span 6;
+        grid-row: 12 / span 3;
         background-image: url(../Assets/TThomas30.jpeg)
     }
     
@@ -116,8 +115,8 @@
     }
     
     .itemFContainer {
-        grid-column: 1 / span 12;
-        grid-row: 7 / span 5;
+        grid-column: 1 / span 6;
+        grid-row: 15 / span 5;
         background-color: rosybrown;
         display: grid;
         grid-template-columns: repeat(8,1fr);
@@ -132,8 +131,9 @@
     
     .changeColorButton {
         width: 100%;
-        height: 100%;
+        height: 50px;
         border-radius: 20px;
+        font-size:18px;
     }
     
     .itemGContainer, .itemHContainer, .itemIContainer {
@@ -148,17 +148,17 @@
     }
     
     .itemGContainer {
-        grid-row: 12 / span 3;
+        grid-row: 20 / span 3;
         grid-column: 1 / span 6;
     }
     
     .itemHContainer {
-        grid-row: 12 / span 3;
-        grid-column: 7 / span 6;
+        grid-row: 23 / span 3;
+        grid-column: 1 / span 6;
     }
     
     .itemIContainer {
-        grid-row: 15 / span 3;
+        grid-row: 26 / span 3;
         grid-column: 1 / span 6;
     }
     
@@ -205,8 +205,8 @@
     }
     
     .itemJContainer {
-        grid-column: 1 / span 12;
-        grid-row: 18 / span 3;
+        grid-column: 1 / span 6;
+        grid-row: 29 / span 4;
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(10,1fr);
@@ -235,8 +235,11 @@
     }
     
     input[type="submit"] {
-        width: 25%;
+        width: 50%;
         margin: auto;
+        height: 50px;
+        border-radius: 20px;
+        font-size:18px;
         
     }
     
