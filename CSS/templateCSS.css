@@ -1,0 +1,81 @@
+* {
+    /*border: 1px solid red;*/
+    margin: 0px;
+    padding: 0px;
+}
+
+@media (min-width:1026px) {
+
+.containerGrid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(13,100px);
+    grid-template-areas: none;
+    grid-gap: 10px;
+    padding: 0px 10px;
+}
+
+.itemAContainer {
+    grid-column: 1 / span 12;
+    grid-row: 1 / span 1;
+    display:grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6,1fr);
+    grid-template-areas: none;
+    grid-gap: 10px;
+    border: 2px solid black;
+}
+.itemAA {
+    grid-column: 1 / span 12;
+    grid-row: 2 / span 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: underline;
+}
+.itemABContainer {
+    grid-column: 9 / span 4;
+    grid-row: 1 / span 6;
+    display:grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(1,1fr);
+    grid-template-areas: none;
+    grid-gap: 10px;
+}
+
+.itemABA {
+    grid-column: 1 / span 3;
+}
+
+.itemABB {
+    grid-column: 4 / span 3;
+}
+
+.itemABC {
+    grid-column: 7 / span 3;
+}
+
+.itemABD {
+    grid-column: 10 / span 3;
+}
+
+.itemABA:hover,.itemABB:hover,.itemABC:hover,.itemABD:hover {
+    background-color: gray;
+}
+
+.itemABA, .itemABB, .itemABC, .itemABD {
+    font-size: 22px;
+    grid-row: 1 / span 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.itemAC {
+    display: none;
+}
+
+}
