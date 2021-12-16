@@ -84,11 +84,6 @@
     display: flex;
 }
 
-.yelpLogo {
-    width: 100%;
-    height: 100%;
-}
-
 .itemCContainer {
         grid-column: 1 / span 12;
         grid-row: 3 / span 1;
