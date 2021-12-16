@@ -12,7 +12,7 @@ function changeResults () {
 }
 
 const getCurrentWeather = async () => {
-  let urlToFetch = `${url}?q=${cityResult},${stateResult}&appid=${apiKey}`
+  let urlToFetch = `${url}?q=${cityResult},us-${stateResult}&appid=${apiKey}`
     try {
         const response = await fetch(urlToFetch);
       if (response.ok) {
