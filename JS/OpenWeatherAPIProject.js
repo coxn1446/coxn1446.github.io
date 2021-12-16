@@ -1,5 +1,5 @@
 const apiKey = "d1d96effdd50f855cbc2baa09b4e40f8";
-const url = "api.openweathermap.org/data/2.5/weather";
+const url = "https://api.openweathermap.org/data/2.5/weather";
 
 const submitButton = document.getElementById("submit")
 
