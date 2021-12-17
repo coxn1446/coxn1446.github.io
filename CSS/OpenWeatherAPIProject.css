@@ -1,5 +1,5 @@
 * {
-    /*border: 1px solid red;*/
+   /* border: 1px solid red; */
     margin: 0px;
     padding: 0px;
 }
@@ -84,8 +84,13 @@
     display: flex;
 }
 
+.OpenWeatherLogo {
+    width: 100%;
+    height: 100%;
+}
+
 .itemCContainer {
-        grid-column: 1 / span 12;
+        grid-column: 5 / span 4;
         grid-row: 3 / span 1;
         display:grid;
         grid-template-columns: repeat(12, 1fr);
@@ -95,4 +100,35 @@
         border: 2px solid black;
 
 }
+
+form {
+    grid-column: 1 / span 12;
+    grid-row: 1 / span 6;
+    display: inline-block;
+
+}
+
+#city {
+    width:65%;
+    height: 30%;
+    text-align: center;
+    margin: 10px;
+}
+
+#state {
+    width: 20%;
+    height: 30%;
+    margin: 10px;
+}
+
+#submit {
+    width: 35%;
+    height: 35px;
+    margin-left: 35%;
+    border-radius: 10px;
+
+
+}
+
+
 }
