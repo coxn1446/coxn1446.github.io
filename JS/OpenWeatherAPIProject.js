@@ -24,6 +24,7 @@ const getCurrentWeather = async () => {
         const response = await fetch(urlToFetch);
       if (response.ok) {
         const jsonResponse = await response.json();
+        return jsonResponse;
         testHTML.innerHTML = jsonResponse.name;
       }
     } catch (error) {
