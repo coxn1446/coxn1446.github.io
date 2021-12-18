@@ -1,5 +1,5 @@
 * {
-   /* border: 1px solid red; */
+    /*border: 1px solid red;*/
     margin: 0px;
     padding: 0px;
 }
@@ -12,7 +12,6 @@
     grid-template-rows: repeat(13,100px);
     grid-template-areas: none;
     grid-gap: 10px;
-    padding: 0px 10px;
 }
 
 .itemAContainer {
@@ -84,7 +83,7 @@
     display: flex;
 }
 
-.OpenWeatherLogo {
+img {
     width: 100%;
     height: 100%;
 }
@@ -96,37 +95,70 @@
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(6,1fr);
         grid-template-areas: none;
-        grid-gap: 10px;
-        border: 2px solid black;
 
 }
 
 form {
     grid-column: 1 / span 12;
     grid-row: 1 / span 6;
-    display: inline-block;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6,1fr);
 
 }
 
-#city {
-    width:65%;
-    height: 30%;
+.itemCA {
+    grid-column: 1 / span 9;
+    grid-row: 1 / span 2;
+
+}
+
+.itemCB {
+    grid-column: 10 / span 3;
+    grid-row: 1 / span 2;
+
+}
+
+.itemCC {
+    grid-column: 4 / span 6;
+    grid-row: 4 / span 2;
+
+}
+
+#city, #state, #submit {
+    width: 95%;
+    height: 95%;
     text-align: center;
-    margin: 10px;
 }
 
-#state {
-    width: 20%;
-    height: 30%;
-    margin: 10px;
+.itemDContainer {
+    grid-column: 5 / span 4;
+    grid-row: 4 / span 2;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(9,1fr);
+    border:2px solid black;
+
 }
 
-#submit {
-    width: 35%;
-    height: 35px;
-    margin-left: 35%;
-    border-radius: 10px;
+.itemDA{
+    grid-column: 1 / span 12;
+    grid-row: 1 / span 2;
+    text-align: center;
+    font-size: 24px;
+    font-family: fantasy;
+    margin: 5px;
 
+}
+.itemDB{
+    grid-column: 1 / span 6;
+    grid-row: 3 / span 6;
+    margin: 5px;
+}
+.itemDC{
+    grid-column: 7 / span 6;
+    grid-row: 3 / span 6;
+    margin:5px;
 
 }
 

@@ -3,6 +3,12 @@ const url = "https://api.openweathermap.org/data/2.5/weather";
 
 const submitButton = document.getElementById("submit")
 const testHTML = document.getElementById("test")
+const weather = document.getElementById("weather")
+const humidity = document.getElementById("humidity")
+const location = document.getElementById("location")
+const weatherImage = document.getElementById("weatherImage")
+const windspeed = document.getElementById("windspeed")
+const temperature = document.getElementById("temperature")
 
 let cityResult = ""
 let stateResult = ""
@@ -13,7 +19,7 @@ function changeResults () {
 }
 
 const getCurrentWeather = async () => {
-  let urlToFetch = `${url}?q=${cityResult},us-${stateResult}&appid=${apiKey}`
+  let urlToFetch = `${url}?q=${cityResult},us-${stateResult}&appid=${apiKey}&units=imperial`
     try {
         const response = await fetch(urlToFetch);
       if (response.ok) {

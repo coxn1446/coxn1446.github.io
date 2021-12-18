@@ -24,9 +24,12 @@
                 <a href="https://openweathermap.org/"><img src="../Assets/OpenWeather-Logo.jpeg" class="OpenWeatherLogo"></a>
             </div>
             <div class="itemCContainer" id="itemCContainer">
-                    <form onsubmit="return false"> 
-                         <input id="city" type="text" name="city" required placeholder="Type a city">
-                            <select id="state" name="state">
+                <form onsubmit="return false"> 
+                     <div class="itemCA" id="itemCA">
+                        <input id="city" type="text" name="city" required placeholder="Type a city">
+                    </div>
+                    <div class="itemCB" id="itemCB">
+                        <select id="state" name="state">
                                   <option value="AL">Alabama</option>
                                     <option value="AK">Alaska</option>
                                     <option value="AZ">Arizona</option>
@@ -77,16 +80,35 @@
                                     <option value="WV">West Virginia</option>
                                     <option value="WI">Wisconsin</option>
                                     <option value="WY">Wyoming</option>
-                            </select>
-                            <br>
-                        <input type="submit" id="submit" value="Submit">
-                    </form>
+                        </select>
+                     </div>
+                    <div class="itemCC" id="itemCC">
+                        <input type="submit" id="submit" value="What's the Weather?">
+                    </div>
+                </form>
             </div>
-            <div id="itemDContainer" class="itemDContainer">
+        <div id="itemDContainer" class="itemDContainer">
+            <div id="itemDA" class="itemDA">
+                <p id="location">Portland, Maine</p>
+
             </div>
-        
+            <div id="itemDB" class="itemDB">
+                <p id="temp">Temperature: 56 degrees</p>
+                <br>
+                <p id="windspeed">Wind Speed: 1.5 knots</p>
+                <br>
+                <p id="humidity">Humidity: 100%</p>
+                <br>
+                <p id="weather">Weather: Clear Skies</p>
+                
+            </div>
+            <div id="itemDC" class="itemDC">
+                <img id="weatherImage" src="../Assets/northern lights.jpeg" alt="Northern Lights">
+            </div>
         </div>
-        </body>
+        
+    </div>
+    </body>
     <footer>
 
     </footer>
