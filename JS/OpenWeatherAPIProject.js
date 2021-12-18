@@ -23,11 +23,61 @@ const getCurrentWeather = async () => {
         const response = await fetch(urlToFetch);
       if (response.ok) {
         const jsonResponse = await response.json();
+        let weatherResult = jsonResponse.weather[0].main;
         place.innerHTML = `${cityResult}, ${stateResult}`;
-        weather1.innerHTML = `Weather: ${jsonResponse.weather[0].main}`;
+        weather1.innerHTML = `Weather: ${weatherResult}`;
         humidity.innerHTML = `Humidity: ${jsonResponse.main.humidity}%`;
         windspeed.innerHTML = `Wind Speed: ${jsonResponse.wind.speed} knots`;
         temperature.innerHTML = `Temperature: ${jsonResponse.main.temp} degrees`;
+        switch (weatherResult) {
+          case 'Clouds':
+            weatherImage.src = "../Assets/WeatherImage/clouds.jpeg";
+            break;
+          case 'Thunderstorm':
+            weatherImage.src = "../Assets/WeatherImage/thunderstorm.jpeg";
+            break;
+          case 'Drizzle':
+            weatherImage.src = "../Assets/WeatherImage/drizzlerain.jpeg";
+            break;
+          case 'Rain':
+            weatherImage.src = "../Assets/WeatherImage/Rain.jpeg";
+            break;
+          case 'Snow':
+            weatherImage.src = "../Assets/WeatherImage/Snow.jpeg";
+            break;
+          case 'Mist':
+            weatherImage.src = "../Assets/WeatherImage/mist.jpeg";
+            break;
+          case 'Smoke':
+            weatherImage.src = "../Assets/WeatherImage/smoke.jpeg";
+            break;
+          case 'Haze':
+            weatherImage.src = "../Assets/WeatherImage/haze.jpeg";
+            break;
+          case 'Dust':
+            weatherImage.src = "../Assets/WeatherImage/dust.jpeg";
+            break;
+          case 'Fog':
+            weatherImage.src = "../Assets/WeatherImage/fog.jpeg";
+            break;
+          case 'Sand':
+            weatherImage.src = "../Assets/WeatherImage/sand.jpeg";
+            break;
+          case 'Ash':
+            weatherImage.src = "../Assets/WeatherImage/ash.jpeg";
+            break;
+          case 'Squall':
+            weatherImage.src = "../Assets/WeatherImage/squall.jpeg";
+            break;
+          case 'Tornado':
+            weatherImage.src = "../Assets/WeatherImage/tornado.jpeg";
+            break;
+          case 'Clear':
+            weatherImage.src = "../Assets/WeatherImage/clear.jpeg";
+            break;
+          default:
+            weatherImage.src = "../Assets/OpenWeather-Logo.jpeg"
+        }
       }
     } catch (error) {
       console.log(error);
