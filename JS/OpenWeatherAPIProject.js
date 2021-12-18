@@ -7,7 +7,8 @@ const humidity = document.getElementById("humidity")
 const place = document.getElementById("place")
 const weatherImage = document.getElementById("weatherImage")
 const windspeed = document.getElementById("windspeed")
-const temperature = document.getElementById("temperature")
+const temperature = document.getElementById("temp")
+const itemDContainer = document.getElementById("itemDContainer")
 
 let cityResult = ""
 let stateResult = ""
@@ -23,12 +24,12 @@ const getCurrentWeather = async () => {
         const response = await fetch(urlToFetch);
       if (response.ok) {
         const jsonResponse = await response.json();
-        return jsonResponse;
+        itemDContainer.style.display = "grid";
+        weather1.innerHTML = `Weather: ${jsonResponse['weather'][0]['main']}`
+        humidity.innerHTML = `Humidity: ${jsonResponse['main']['humidity']}%`;
         place.innerHTML = `${cityResult}, ${stateResult}`;
-        weather1.innerHTML = `Weather: ${jsonResponse.weather[0].main}`;
-        humidity.innerHTML = `Humidity: ${jsonResponse.main.humidity}%`;
-        windspeed.innerHTML = `Wind Speed: ${jsonResponse.wind.speed} knots`;
-        temperature.innerHTML = `Temperature: ${jsonResponse.main.temp} degrees`;
+        temperature.innerHTML = `Temperature: ${jsonResponse['main']['temp']} degrees`;
+        windspeed.innerHTML = `Wind Speed: ${jsonResponse['wind']['speed']} knots`;
         switch (jsonResponse.weather[0].main) {
           case 'Clouds':
             weatherImage.src = "../Assets/WeatherImage/clouds.jpeg";
