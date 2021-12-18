@@ -23,13 +23,13 @@ const getCurrentWeather = async () => {
         const response = await fetch(urlToFetch);
       if (response.ok) {
         const jsonResponse = await response.json();
-        let weatherResult = jsonResponse.weather[0].main;
+        return jsonResponse;
         place.innerHTML = `${cityResult}, ${stateResult}`;
-        weather1.innerHTML = `Weather: ${weatherResult}`;
+        weather1.innerHTML = `Weather: ${jsonResponse.weather[0].main}`;
         humidity.innerHTML = `Humidity: ${jsonResponse.main.humidity}%`;
         windspeed.innerHTML = `Wind Speed: ${jsonResponse.wind.speed} knots`;
         temperature.innerHTML = `Temperature: ${jsonResponse.main.temp} degrees`;
-        switch (weatherResult) {
+        switch (jsonResponse.weather[0].main) {
           case 'Clouds':
             weatherImage.src = "../Assets/WeatherImage/clouds.jpeg";
             break;
