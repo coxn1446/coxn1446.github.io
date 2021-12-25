@@ -235,7 +235,7 @@
  .itemDContainer {
      grid-column: 1 / span 12;
      grid-row: span 2;
-     display: grid;
+     display: none;
      grid-template-columns: repeat(12, 1fr);
      grid-template-rows: repeat(9,1fr);
  
