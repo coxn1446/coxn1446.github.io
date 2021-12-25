@@ -13,7 +13,7 @@
          justify-content: center;
      }
 
-     img {
+    .OpenWeatherLogo {
          height:100%;
      }
      
@@ -87,11 +87,11 @@
      .itemDC{
          grid-column: 7 / span 6;
          grid-row: 3 / span 6;
-         margin:5px;
+
      
      }
 
-     .weatherImage {
+     #weatherImage {
          height: 100%;
          width: 100%;
      }
@@ -182,7 +182,7 @@
      
      }
 
-     .weatherImage {
+     #weatherImage {
         height: 100%;
         width: 100%;
     }
@@ -272,7 +272,7 @@
  
  }
 
- .weatherImage {
+ #weatherImage {
     height: 100%;
     width: 100%;
 }
