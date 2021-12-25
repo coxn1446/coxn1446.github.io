@@ -2,32 +2,44 @@
 <html>
     <head>
         <title>Coxn1446's Projects</title>
-        <link rel="stylesheet" href="../CSS/style.css">
+        <link rel="stylesheet" href="../CSS/Projects.css">
+        <link rel="stylesheet" href="../CSS/templateCSS.css">
+        <script type="text/javascript" src="../JS/Projects.js" defer></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <header>
-            <nav>
-                <ul>
-                  <li class ="homeNavigation"><a href="../index.html">Home</a></li>
-                  <li><a href="ContactMe.html">Contact Me</a></li>
-                  <li><a href="Projects.html">Projects</a></li>
-                  <li><a href="About.html">About</a></li>
-                </ul>
-            </nav>
-        </header>
-        <h1><a href="MixedMessages.html">Mixed Messages</a></h1>
-        <p>
-            I have used basic HTML forms to create an interactive Mad Lib.
-        </p>
-        <h1><a href="GridTemplateProject.html">Grid Template Project</a></h1>
-        <p>
-            Used CSS Grid to create a better web page layout. I have a few media queries too so this page should resize depending on the size of your browser.
-        </p>
-        <h1><a href="OpenWeatherAPIProject.html">Open Weather API Project</a></h1>
-        <p>
-            Called a 3rd party API and displayed its info on a webpage. This tool searches for current weather in any US city.
-        </p>
-        
+        <div class="containerGrid" id="containerGrid">
+            <div class="itemAContainer" id="itemAContainer">
+                <div class="itemAA">Projects</div>
+                <div class="itemABContainer" id="itemABContainer">
+                    <div class="itemABA" id="itemABA"><a href="../index.html">Home</a></div>
+                    <div class="itemABB" id="itemABB"><a href="About.html">About</a></div>
+                    <div class="itemABC" id= "itemABC"><a href="Projects.html">Projects</a></div>
+                    <div class="itemABD" id= "itemABD"><a href="ContactMe.html">Contact</a></div>
+                </div>
+                <div class="itemAC">
+                    <img class="menuButton" src="../Assets/menubutton.png" alt="menu button" id="menuButton">
+                </div>
+            </div>
+            <div class="itemBContainer" id="itemBContainer">
+                <br>
+                <h1><a href="MixedMessages.html">Mixed Messages</a></h1>
+                <p>
+                    I have used basic HTML forms to create an interactive Mad Lib.
+                </p>
+                <br>
+                <h1><a href="GridTemplateProject.html">Grid Template Project</a></h1>
+                <p>
+                    Used CSS Grid to create a better web page layout. I have a few media queries too so this page should resize depending on the size of your browser.
+                </p>
+                <br>
+                <h1><a href="OpenWeatherAPIProject.html">Open Weather API Project</a></h1>
+                <p>
+                    Called a 3rd party API and displayed its info on a webpage. This tool searches for current weather in any US city.
+                </p>
+            </div>
+        </div>
+
     </body>
     <footer>
 

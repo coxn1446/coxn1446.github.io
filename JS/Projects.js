@@ -1,12 +1,8 @@
 const containerGrid = document.getElementById('containerGrid');
 const itemAContainer = document.getElementById("itemAContainer");
 const itemABContainer = document.getElementById("itemABContainer");
-const itemABA = document.getElementById("itemABA");
-const itemABB = document.getElementById("itemABB");
-const itemABC = document.getElementById("itemABC");
-const itemABD = document.getElementById("itemABD");
 const itemBContainer = document.getElementById("itemBContainer");
-const menuButton = document.getElementById('menuButton');
+const menuButton = document.getElementById("menuButton");
 
 function menuClick () {
     if (itemABContainer.style.display==="grid"){
@@ -25,4 +21,4 @@ function menuClick () {
   }
   
   //Turns menu button into a clickable event
-  menuButton.addEventListener('click',menuClick);
+  menuButton.addEventListener("click",menuClick);
