@@ -5,13 +5,10 @@
 }
 
 @media (min-width:320px){
-    .containerGrid {
-        grid-template-rows: repeat(9, 75px);
-    }
  
     .itemBContainer {
         grid-column: 1 / span 12;
-        grid-row: 3 / span 7;
+        grid-row: span 7;
         display:grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(8,1fr);
@@ -44,13 +41,10 @@
 }
 
 @media (min-width:600px){
-    .containerGrid {
-        grid-template-rows: repeat(8,85px);
-    }
 
     .itemBContainer {
         grid-column: 1 / span 12;
-        grid-row: 3 / span 6;
+        grid-row: span 6;
         display:grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(8,1fr);
@@ -85,13 +79,10 @@
 
 @media (min-width:1026px) {
 
-.containerGrid {
-    grid-template-rows: repeat(7,100px);
-}
 
 .itemBContainer {
     grid-column: 1 / span 12;
-    grid-row: 2 / span 6;
+    grid-row: span 6;
     display:grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(8,1fr);

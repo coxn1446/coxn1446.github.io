@@ -2,36 +2,42 @@
 <html>
     <head>
         <title>Mixed Messages</title>
-        <link rel="stylesheet" href="../CSS/style.css">
+        <link rel="stylesheet" href="../CSS/templateCSS.css">
+        <link rel="stylesheet" href="../CSS/mixedMessages.css">
         <script type="text/javascript" src="../JS/Mixed-Messages.js" defer></script>
     </head>
     <body>
-        <header>
-            <nav>
-                <ul>
-                    <li class ="homeNavigation"><a href="../index.html">Home</a></li>
-                    <li><a href="ContactMe.html">Contact Me</a></li>
-                    <li><a href="Projects.html">Projects</a></li>
-                    <li><a href="About.html">About</a></li>
-                  </ul>
-            </nav>
-        </header>
-        <div class="madLib">
-        <h1>Mixed Messages</h1>
-        <p>Please use the inputs belows to create your own Mad Lib. All three fields are required to produce an output.
-        </p>
-        <form action="MixedMessagesMadLib.html" method="get"> 
-            <label for="word-1">Noun (singular)</label>
-            <input id="word-1" type="text" name="word-1" required>
-            <br>
-            <label for="word-2">Adjective</label>
-            <input id="word-2" type="text" name="word-2" required>
-            <br>
-            <label for="word-3">Verb (present tense)</label>
-            <input id="word-3" type="text" name="word-3" required>
-            <br>
-            <input type="submit" id="submit" value="Generate a Mad Lib">
-        </form>
+        <div class="containerGrid" id="containerGrid">
+            <div class="itemAContainer" id="itemAContainer">
+                <div class="itemAA">Mixed Messages</div>
+                <div class="itemABContainer" id="itemABContainer">
+                    <div class="itemABA" id="itemABA"><a href="../index.html">Home</a></div>
+                    <div class="itemABB" id="itemABB"><a href="About.html">About</a></div>
+                    <div class="itemABC" id= "itemABC"><a href="Projects.html">Projects</a></div>
+                    <div class="itemABD" id= "itemABD"><a href="ContactMe.html">Contact</a></div>
+                </div>
+                <div class="itemAC">
+                    <img class="menuButton" src="../Assets/menubutton.png" alt="menu button" id="menuButton">
+                </div>
+                <script type="text/javascript" src="../JS/menuClick.js"></script>
+            </div>
+            <div class="itemBContainer">
+                <br>
+                <p>Please use the inputs belows to create your own Mad Lib. All three fields are required to produce an output.
+                </p>
+                <form action="MixedMessagesMadLib.html" method="get" class="madLib"> 
+                    <label for="word-1">Noun (singular)</label>
+                    <input id="word-1" type="text" name="word-1" required>
+                    <br>
+                    <label for="word-2">Adjective</label>
+                    <input id="word-2" type="text" name="word-2" required>
+                    <br>
+                    <label for="word-3">Verb (present tense)</label>
+                    <input id="word-3" type="text" name="word-3" required>
+                    <br>
+                    <input type="submit" id="submit" value="Generate a Mad Lib">
+                </form>
+                </div>
         </div>
     </body>
     <footer>

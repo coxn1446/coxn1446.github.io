@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title></title>
-        <link rel="stylesheet" href="../CSS/style.css">
+        <title>Mixed Messages Mad Lib</title>
+        <link rel="stylesheet" href="../CSS/mixedMessages.css">
+        <link rel="stylesheet" href="../CSS/templateCSS.css">
         <script type="text/javascript" src="../JS/Mixed-Messages.js" defer></script>
     </head>
     <body>
-        <header>
-            <nav>
-                <ul>
-                    <li class ="homeNavigation"><a href="../index.html">Home</a></li>
-                    <li><a href="ContactMe.html">Contact Me</a></li>
-                    <li><a href="Projects.html">Projects</a></li>
-                    <li><a href="About.html">About</a></li>
-                  </ul>
-            </nav>
-        </header>
-        <div class="madLib">
-            <p id="mad-lib">Hello</p>
-            <button><a href="MixedMessages.html">Try Again?</a></button>
+        <div class="containerGrid" id="containerGrid">
+            <div class="itemAContainer" id="itemAContainer">
+                <div class="itemAA">Mixed Messages Mad Lib</div>
+                <div class="itemABContainer" id="itemABContainer">
+                    <div class="itemABA" id="itemABA"><a href="../index.html">Home</a></div>
+                    <div class="itemABB" id="itemABB"><a href="About.html">About</a></div>
+                    <div class="itemABC" id= "itemABC"><a href="Projects.html">Projects</a></div>
+                    <div class="itemABD" id= "itemABD"><a href="ContactMe.html">Contact</a></div>
+                </div>
+                <div class="itemAC">
+                    <img class="menuButton" src="../Assets/menubutton.png" alt="menu button" id="menuButton">
+                </div>
+                <script type="text/javascript" src="../JS/menuClick.js"></script>
+            </div>
+        </div>
+        <div class="itemBContainer" id="itemBContainer">
+            <div class="madLib">
+                <p id="mad-lib">Hello</p>
+                <button><a href="MixedMessages.html">Try Again?</a></button>
+            </div>
         </div>
     </body>
     <footer>

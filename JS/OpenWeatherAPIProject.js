@@ -10,17 +10,7 @@ const place = document.getElementById("place");
 const weatherImage = document.getElementById("weatherImage");
 const windspeed = document.getElementById("windspeed");
 const temperature = document.getElementById("temp");
-const containerGrid = document.getElementById('containerGrid');
-const itemAContainer = document.getElementById("itemAContainer");
-const itemABContainer = document.getElementById("itemABContainer");
-const itemABA = document.getElementById("itemABA");
-const itemABB = document.getElementById("itemABB");
-const itemABC = document.getElementById("itemABC");
-const itemABD = document.getElementById("itemABD");
-const itemBContainer = document.getElementById("itemBContainer");
-const itemCContainer = document.getElementById("itemCContainer");
 const itemDContainer = document.getElementById("itemDContainer");
-const menuButton = document.getElementById('menuButton');
 
 //Creates variables to store form data
 let cityResult = ""
@@ -119,29 +109,3 @@ const getCurrentWeather = async () => {
 //Calls getCurrentWeather function using form inputs upon submit button click event
 submitButton.addEventListener("click", changeResults);
 submitButton.addEventListener("click", getCurrentWeather);
-
-//Function which displays nav menu in mobile view
-function menuClick () {
-  if (itemABContainer.style.display==="grid"){
-    containerGrid.style.gridTemplateRows="repeat(9,75px)";
-    itemAContainer.style.gridRow="1 / span 2";
-    itemAContainer.style.gridTemplateRows = "repeat(2,1fr)";
-    itemABContainer.style.display="none";
-    itemBContainer.style.gridRow="3 / span 1";
-    itemCContainer.style.gridRow="4 / span 2";
-    itemDContainer.style.gridRow="6 / span 3";
-      
-  } else {
-      containerGrid.style.gridTemplateRows="repeat(12,75px)";
-      itemAContainer.style.gridRow="1 / span 4";
-      itemAContainer.style.gridTemplateRows = "repeat(8,1fr)";
-      itemABContainer.style.display="grid";
-      itemBContainer.style.gridRow="5 / span 1";
-      itemCContainer.style.gridRow="6 / span 2";
-      itemDContainer.style.gridRow="8 / span 3";
-     
-  }
-}
-
-//Turns menu button into a clickable event
-menuButton.addEventListener('click',menuClick);
