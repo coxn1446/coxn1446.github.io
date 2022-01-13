@@ -1,6 +1,6 @@
 let userAccessToken;
 const clientID = '97bb66261073435095ce8d52c7d63f2a';
-const redirectURI = "http://localhost:3000/";
+const redirectURI = "https://coxnisjamming.surge.sh/";
 
 
 const Spotify = {

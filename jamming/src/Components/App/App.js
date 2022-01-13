@@ -5,6 +5,7 @@ import SearchBar from "../SearchBar/searchbar"
 import SearchResults from "../SearchResults/searchresults"
 import Playlist from "../Playlist/playlist"
 import Spotify from "../../util/Spotify";
+import Navigation from "../Navigation/navigation"
 
 
 class App extends React.Component {
@@ -66,7 +67,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <h1>Ja<span className="highlight">mmm</span>ing </h1>
+        <Navigation />
         <div className="App">
           <SearchBar 
             onSearch={this.search}
