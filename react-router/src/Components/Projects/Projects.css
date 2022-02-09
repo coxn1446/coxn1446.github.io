@@ -1,0 +1,23 @@
+@media (min-width:320px){
+
+    .itemBContainerProjects {
+        grid-column: 1 / span 7;
+        grid-row: span 6;
+    }
+}
+
+@media (min-width:600px){
+
+    .itemBContainerProjects {
+        grid-column: 1 / span 12;
+        grid-row: span 6;
+    }
+}
+
+@media (min-width:1026px){
+
+    .itemBContainerProjects {
+        grid-column: 1 / span 12;
+        grid-row: span 6;
+    }
+}
