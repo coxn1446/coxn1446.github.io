@@ -2,10 +2,13 @@ import './App.css';
 import Home from "../Home/Home"
 import About from "../About/About"
 import Projects from "../Projects/Projects"
+import MixedMessages from "../Projects/MixedMessages/MixedMessages"
+import MixedMessagesMadLib from '../Projects/MixedMessages/MixedMessagesMadLib';
 import Contact from "../Contact/Contact"
 import Nav from "../Nav/Nav"
 import {Routes, Route} from "react-router-dom"
 import React, {useState} from 'react';
+
 
 function App() {
 
@@ -14,9 +17,9 @@ function App() {
     if (locationPath === "/") {
       setTitle("Coxn's Site")
     } else {
-    let removeSlash = locationPath.substring(1);
+    let removeSlash = locationPath.substring(locationPath.lastIndexOf("/")+1);
     let result = removeSlash.charAt(0).toUpperCase() + removeSlash.slice(1);
-    setTitle(result)
+    setTitle(result.replace(/-/g," "))
     }
   };
 
@@ -52,19 +55,31 @@ function App() {
           />}
         />
         <Route
-          path="/about"
+          path="about"
           element={<About
             changeTitle={changeTitle} 
           />}
         />
         <Route
-          path="/projects"
+          path="projects"
           element={<Projects 
             changeTitle={changeTitle} 
           />}
         />
         <Route
-          path="/contact"
+          path="projects/Mixed-Messages"
+          element={<MixedMessages
+            changeTitle={changeTitle}
+          />}
+        />
+        <Route
+          path="projects/Mixed-Messages-MadLib"
+          element={<MixedMessagesMadLib
+            changeTitle={changeTitle}
+          />}
+        />
+        <Route
+          path="contact"
           element={<Contact
             changeTitle={changeTitle}
           />}
